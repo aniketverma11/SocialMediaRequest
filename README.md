@@ -60,13 +60,13 @@ Follow these steps to run the Django application with Docker Compose:
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/your-django-project.git
+    git clone https://github.com/aniketverma11/SocialMediaRequest.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd your-django-project
+    cd SocialMediaRequest
     ```
 
 3. Build the Docker containers:
