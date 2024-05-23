@@ -10,7 +10,7 @@ from utils.behaviours import UUIDMixin, MobileMixin, EmailMixin
 # Create your models here.
 class User(AbstractUser, UUIDMixin, MobileMixin, EmailMixin):
     """
-    Default custom user model for secury.
+    Default custom user model for this project.
     If adding fields that need to be filled at user signup,
     check forms.SignupForm and forms.SocialSignupForms accordingly.
     """
