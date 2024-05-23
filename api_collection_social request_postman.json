@@ -1,0 +1,258 @@
+{
+    "info": {
+        "_postman_id": "aa12c14f-5ee6-4d60-b071-721d2cab33b8",
+        "name": "social request",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "signup",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/users/signup/",
+                    "path": [
+                        "api",
+                        "users",
+                        "signup"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"first_name\":\"Aniket\",\n  \"last_name\":\"Verma\",\n  \"email\":\"anikettvt@gmail.com\",\n  \"mobile\":\"8439106273\",\n  \"password\":\"Verma@123\"\n}"
+                }
+            }
+        },
+        {
+            "name": "login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/users/login/",
+                    "path": [
+                        "api",
+                        "users",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"email\":\"anikettvt@gmail.com\",\n  \"password\":\"Vrma@123\"\n}"
+                }
+            }
+        },
+        {
+            "name": "search",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/users/search/?search=",
+                    "query": [
+                        {
+                            "key": "search",
+                            "value": ""
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api",
+                        "users",
+                        "search"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE2NDk4NDQ0LCJpYXQiOjE3MTY0OTQ4NDQsImp0aSI6ImZiZDI2MzA3NGE4YjQ0NWZiNzhkMjAxNDlkNWVmODEyIiwidXNlcl9pZCI6M30.D_WmJxAGCWaGd5UcFSWNJ6B7UZaCAeAdVDi4rj4qnR0",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "frienf request send",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/social/friend-request/",
+                    "path": [
+                        "api",
+                        "social",
+                        "friend-request"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"to_user_id\":\"492e0ec4-e781-4883-92c2-2442da9bc9fc\"\n}"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE2NDk4NDQ0LCJpYXQiOjE3MTY0OTQ4NDQsImp0aSI6ImZiZDI2MzA3NGE4YjQ0NWZiNzhkMjAxNDlkNWVmODEyIiwidXNlcl9pZCI6M30.D_WmJxAGCWaGd5UcFSWNJ6B7UZaCAeAdVDi4rj4qnR0",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "pending firend request",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/social/pending-requests/",
+                    "path": [
+                        "api",
+                        "social",
+                        "pending-requests"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE2NDk5NDM4LCJpYXQiOjE3MTY0OTU4MzgsImp0aSI6IjhmNjEwMGEwYjU0ZTQ4MzQ5YzdhOThmZTgyNTE2MWNlIiwidXNlcl9pZCI6NH0.EaeDmQpJOumSElJzdjDJec9l7AakXcxaF4iATHCGaAM",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "friend list",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/social/friends/",
+                    "path": [
+                        "api",
+                        "social",
+                        "friends"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE2NDk5Mjc2LCJpYXQiOjE3MTY0OTU2NzYsImp0aSI6ImRiYmY5ZTc2ODExYzQ2ZTZiMDRiMDUxODU2YzFkZDIzIiwidXNlcl9pZCI6M30.pdMa1Uq7SP_VQa_6KmM6uVM2on6bm_B4fnVTIaSsENI",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "friend request accept",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/social/friend-request/894273cf-5d2d-4752-9d56-e749e68149ea/",
+                    "path": [
+                        "api",
+                        "social",
+                        "friend-request",
+                        "894273cf-5d2d-4752-9d56-e749e68149ea"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"action\":\"accept\"\n}"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE2NDk5NDM4LCJpYXQiOjE3MTY0OTU4MzgsImp0aSI6IjhmNjEwMGEwYjU0ZTQ4MzQ5YzdhOThmZTgyNTE2MWNlIiwidXNlcl9pZCI6NH0.EaeDmQpJOumSElJzdjDJec9l7AakXcxaF4iATHCGaAM",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
