@@ -33,6 +33,12 @@ source env/bin/activate
 pip install -r requirements.txt
 
 ```
+## Create Migrations
+```
+python manage.py makemigrations 
+
+```
+
 ## Apply Migrations
 ```
 python manage.py migrate
