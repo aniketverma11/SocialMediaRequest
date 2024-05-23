@@ -29,16 +29,21 @@ source env/bin/activate
 
 ## Install Requirements
 
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 
 ```
 ## Apply Migrations
-```python manage.py migrate
+```
+python manage.py migrate
+
 ```
 
 ##  Run the Development Server
 
-```python manage.py runserver
+```
+python manage.py runserver
+
 ```
 
 
